@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical"
+    android:background="#1C1A1B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/back3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:scaleType="centerInside"
+            android:backgroundTint="#1C1A1B"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset your password"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pleas enter your emain address. You will recive a link to create a new password via email."
+            android:gravity="center"
+                android:textColor="#7A7070"
+            android:layout_marginRight="68dp"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:backgroundTint="#312B2D"
+            android:layout_marginTop="30dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/email"
+                android:text="Your Email"
+                android:textSize="15dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#8F8584"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:backgroundTint="#312B2D"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:backgroundTint="#E52A61"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="30dp">
+
+            <Button
+                android:id="@+id/login3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:backgroundTint="#E52A61"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:outlineAmbientShadowColor="#E52A61"
+                android:outlineSpotShadowColor="#E52A61"
+                android:shadowColor="#E52A61"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="LOGIN" />
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
